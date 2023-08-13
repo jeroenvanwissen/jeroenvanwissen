@@ -5,5 +5,6 @@
 - 🌱 I’m currently learning how to survive life...
 - 📫 You can contact me on Mastodon: https://mastodon.social/@jeroenvanwissen
 - 📫 You can also contact me on LinkedIn: https://www.linkedin.com/in/jeroenvanwissen/
+- 📫 Find all other ways to contact me on PublicVoid: https://public-void.social/@jeroen
 - ✍️ Sometimes I try to write random things on my personal website: https://jeroenvanwissen.nl
 - 📸 You can find my photography hobby on https://31f-fotografie.nl
