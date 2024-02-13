@@ -8,10 +8,10 @@ I'm a software developer, beer brewer, photographer and a lot more.
 🌱 I’m still learning how to survive life...
 
 <span>
-    <img height="100" src="https://github-readme-stats.vercel.app/api/top-langs/?username=jeroenvanwissen&layout=compact&theme=onedark" />
+    <img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=jeroenvanwissen&layout=compact&theme=onedark" />
 </span>
 <span>
-    <img height="100" src="https://github-readme-stats.vercel.app/api?username=jeroenvanwissen&show_icons=true&theme=onedark" />
+    <img height="150" src="https://github-readme-stats.vercel.app/api?username=jeroenvanwissen&show_icons=true&theme=onedark" />
 </span>
 
 ----
