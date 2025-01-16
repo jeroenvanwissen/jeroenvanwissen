@@ -1,10 +1,17 @@
+<span>
+    <img src="header.png" />
+</span>
+
 # Hi there 👋
 ```
 # Project: jeroenvanwissen
 # File: README.md
 # Last Modified: 17-01-2025
 ```
-I'm a software developer, beer brewer, photographer and a lot more.
+I'm Jeroen, Full Stack Developer from the Netherlands.
+
+Every now and then I brew beer, do a bit of photography and other things...
+
 🌱 I’m still learning how to survive life...
 
 <span>
