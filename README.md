@@ -2,7 +2,7 @@
 ```
 # Project: jeroenvanwissen
 # File: README.md
-# Created Date: 25-10-2022
+# Last Modified: 17-01-2025
 ```
 I'm a software developer, beer brewer, photographer and a lot more.
 🌱 I’m still learning how to survive life...
@@ -18,6 +18,7 @@ I'm a software developer, beer brewer, photographer and a lot more.
 
 Find me on some of the following platforms:
 
+- Bsky.app: [jeroenvanwissen.nl](https://bsky.app/profile/jeroenvanwissen.nl)
 - Twitter: [jvwissen](https://twitter.com/jvwissen)
 - Mastodon: [jeroenvanwissen](https://mastodon.social/@jeroenvanwissen)
 - LinkedIn: [jeroenvanwissen](https://www.linkedin.com/in/jeroenvanwissen/)
