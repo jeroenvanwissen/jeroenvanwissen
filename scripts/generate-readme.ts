@@ -11,57 +11,70 @@ interface Post {
 }
 
 interface SocialLink {
-  label: string;
+  alt: string;
   url: string;
-  logo: string;
+  label?: string;
+  logo?: string;
   logoColor?: string;
   color: string;
 }
 
 const SOCIAL_LINKS: SocialLink[] = [
   {
-    label: "Bluesky",
+    alt: "Bluesky",
     url: "https://bsky.app/profile/jeroenvanwissen.nl",
+    label: "Bluesky",
     logo: "bluesky",
     logoColor: "white",
     color: "0085ff",
   },
   {
-    label: "Mastodon",
+    alt: "Mastodon",
     url: "https://mastodon.social/@jeroenvanwissen",
+    label: "Mastodon",
     logo: "mastodon",
     logoColor: "white",
     color: "6364ff",
   },
   {
-    label: "LinkedIn",
-    url: "https://www.linkedin.com/in/jeroenvanwissen/",
-    logo: "linkedin",
-    logoColor: "white",
-    color: "0a66c2",
-  },
-  {
-    label: "X",
+    alt: "X",
     url: "https://twitter.com/jvwissen",
     logo: "x",
     logoColor: "white",
     color: "000000",
   },
   {
-    label: "Website",
+    alt: "LinkedIn",
+    url: "https://www.linkedin.com/in/jeroenvanwissen/",
+    label: "LinkedIn",
+    logo: "linkedin",
+    logoColor: "white",
+    color: "0a66c2",
+  },
+  {
+    alt: "Jeroen van Wissen",
     url: "https://jeroenvanwissen.nl",
-    logo: "googlechrome",
+    label: "jeroenvanwissen.nl",
     logoColor: "white",
     color: "ff2bb9",
   },
   {
-    label: "Photography",
+    alt: "31F-Fotografie",
     url: "https://31f-fotografie.nl",
-    logo: "unsplash",
+    label: "31f--fotografie.nl",
     logoColor: "white",
-    color: "f778ba",
+    color: "333",
   },
 ];
+
+function buildBadgeUrl(link: SocialLink): string {
+  const parts: string[] = [];
+  parts.push(`style=for-the-badge`);
+  if (link.logo) parts.push(`logo=${link.logo}`);
+  if (link.logoColor) parts.push(`logoColor=${link.logoColor}`);
+  const label = link.label ?? "";
+  return `https://img.shields.io/badge/${label}-${link.color}?${parts.join("&")}`;
+}
 
 export function generateReadme(): string {
   const posts = loadPosts();
@@ -82,10 +95,9 @@ ${posts.length > 5 ? `\n<sub>[View all posts...](posts/)</sub>\n` : ""}`
       : "";
 
   const socialSection = SOCIAL_LINKS.map((link) => {
-    const logoColorParam = link.logoColor ? `&logoColor=${link.logoColor}` : "";
-    const badgeUrl = `https://img.shields.io/badge/${encodeURIComponent(link.label)}-${link.color}?style=for-the-badge&logo=${link.logo}${logoColorParam}`;
-    return `[![${link.label}](${badgeUrl})](${link.url})`;
-  }).join(" ");
+    const badgeUrl = buildBadgeUrl(link);
+    return `<a href="${link.url}"><img src="${badgeUrl}" alt="${link.alt}" /></a>`;
+  }).join("\n  ");
 
   return `<p align="center">
   <img src="generated/header.svg" alt="Jeroen van Wissen" width="840" />

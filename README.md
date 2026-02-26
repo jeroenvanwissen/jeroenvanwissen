@@ -33,7 +33,12 @@
 ---
 
 <p align="center">
-  [![Bluesky](https://img.shields.io/badge/Bluesky-0085ff?style=for-the-badge&logo=bluesky&logoColor=white)](https://bsky.app/profile/jeroenvanwissen.nl) [![Mastodon](https://img.shields.io/badge/Mastodon-6364ff?style=for-the-badge&logo=mastodon&logoColor=white)](https://mastodon.social/@jeroenvanwissen) [![LinkedIn](https://img.shields.io/badge/LinkedIn-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jeroenvanwissen/) [![X](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://twitter.com/jvwissen) [![Website](https://img.shields.io/badge/Website-ff2bb9?style=for-the-badge&logo=googlechrome&logoColor=white)](https://jeroenvanwissen.nl) [![Photography](https://img.shields.io/badge/Photography-f778ba?style=for-the-badge&logo=unsplash&logoColor=white)](https://31f-fotografie.nl)
+  <a href="https://bsky.app/profile/jeroenvanwissen.nl"><img src="https://img.shields.io/badge/Bluesky-0085ff?style=for-the-badge&logo=bluesky&logoColor=white" alt="Bluesky" /></a>
+  <a href="https://mastodon.social/@jeroenvanwissen"><img src="https://img.shields.io/badge/Mastodon-6364ff?style=for-the-badge&logo=mastodon&logoColor=white" alt="Mastodon" /></a>
+  <a href="https://twitter.com/jvwissen"><img src="https://img.shields.io/badge/-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" /></a>
+  <a href="https://www.linkedin.com/in/jeroenvanwissen/"><img src="https://img.shields.io/badge/LinkedIn-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="https://jeroenvanwissen.nl"><img src="https://img.shields.io/badge/jeroenvanwissen.nl-ff2bb9?style=for-the-badge&logoColor=white" alt="Jeroen van Wissen" /></a>
+  <a href="https://31f-fotografie.nl"><img src="https://img.shields.io/badge/31f--fotografie.nl-333?style=for-the-badge&logoColor=white" alt="31F-Fotografie" /></a>
 </p>
 
 <p align="center">
