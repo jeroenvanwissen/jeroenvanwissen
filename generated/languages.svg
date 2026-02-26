@@ -79,7 +79,7 @@
             width="0" height="18" 
             rx="4" fill="#3178c6"
             style="animation: growBar 0.8s ease-out 0.4s forwards;">
-        <animate attributeName="width" from="0" to="226.1" 
+        <animate attributeName="width" from="0" to="226.27" 
                  dur="0.8s" begin="0.4s" fill="freeze" />
       </rect>
 
@@ -159,7 +159,7 @@
             font-family="'SFMono-Regular', Consolas, monospace" 
             font-size="12"
             style="animation: fadeIn 0.4s ease-out 1s both; opacity: 0;">
-        8.3%
+        8.2%
       </text>
     </g>
 
@@ -254,7 +254,7 @@
             width="0" height="18" 
             rx="4" fill="#e34c26"
             style="animation: growBar 0.8s ease-out 0.9s forwards;">
-        <animate attributeName="width" from="0" to="13.08" 
+        <animate attributeName="width" from="0" to="13.09" 
                  dur="0.8s" begin="0.9s" fill="freeze" />
       </rect>
 

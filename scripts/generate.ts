@@ -42,7 +42,7 @@ async function main() {
 
   // Generate README (social badges are now shields.io URLs, no SVG generation needed)
   console.log("Generating README.md...");
-  const readme = generateReadme();
+  const readme = await generateReadme();
   fs.writeFileSync(path.resolve(process.cwd(), "README.md"), readme);
 
   console.log("Done! All files generated successfully.");
