@@ -80,7 +80,7 @@ export async function generateLatestPostSvg(): Promise<string> {
   const date = formatDate(post.pubDate);
 
   const bgColor = "#0d1117";
-  const borderColor = "#30363d";
+  const borderColor = "#1e1e2e";
   const primaryColor = "#ff2bb9";
   const textColor = "#c9d1d9";
   const mutedColor = "#8b949e";
@@ -131,27 +131,6 @@ export async function generateLatestPostSvg(): Promise<string> {
         animation: pulse 2s ease-in-out infinite;
       }
       
-      .border {
-        fill: none;
-        stroke: ${borderColor};
-        stroke-width: 1;
-        rx: 6;
-        animation: drawBorder 1s ease-out;
-      }
-      
-      .clickable-area {
-        cursor: pointer;
-        transition: opacity 0.2s ease;
-      }
-      
-      .clickable-area:hover .title {
-        fill: ${textColor};
-      }
-      
-      .clickable-area:hover .border {
-        stroke: ${primaryColor};
-      }
-      
       @keyframes fadeIn {
         from {
           opacity: 0;
@@ -182,51 +161,36 @@ export async function generateLatestPostSvg(): Promise<string> {
           opacity: 0.6;
         }
       }
-      
-      @keyframes drawBorder {
-        from {
-          stroke-dasharray: 1740;
-          stroke-dashoffset: 1740;
-        }
-        to {
-          stroke-dasharray: 1740;
-          stroke-dashoffset: 0;
-        }
-      }
     </style>
   </defs>
   
-  <rect width="840" height="120" fill="${bgColor}" rx="6"/>
+  <rect width="840" height="120" fill="${bgColor}" rx="10" stroke="${borderColor}" stroke-width="1"/>
   
-  <a href="${escapeXml(post.link)}" target="_top" class="clickable-area">
-    <rect class="border" width="838" height="118" x="1" y="1"/>
-    
-    <g class="container">
-      <!-- Icon -->
-      <g class="icon">
-        <circle cx="30" cy="30" r="6"/>
-        <path d="M 30 40 L 30 70 M 20 60 L 30 70 L 40 60" stroke="${primaryColor}" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-      </g>
-      
-      <!-- Label -->
-      <text class="label" x="50" y="28">Latest Blog Post</text>
-      
-      <!-- Title -->
-      <text class="title" x="50" y="55">${escapeXml(title)}</text>
-      
-      <!-- Description -->
-      <text class="description" x="50" y="75">${escapeXml(description)}</text>
-      
-      <!-- Date -->
-      <text class="date" x="50" y="95">${date}</text>
+  <g class="container">
+    <!-- Icon -->
+    <g class="icon">
+      <circle cx="30" cy="30" r="6"/>
+      <path d="M 30 40 L 30 70 M 20 60 L 30 70 L 40 60" stroke="${primaryColor}" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
     </g>
-  </a>
+    
+    <!-- Label -->
+    <text class="label" x="50" y="28">Latest Blog Post</text>
+    
+    <!-- Title -->
+    <text class="title" x="50" y="55">${escapeXml(title)}</text>
+    
+    <!-- Description -->
+    <text class="description" x="50" y="75">${escapeXml(description)}</text>
+    
+    <!-- Date -->
+    <text class="date" x="50" y="95">${date}</text>
+  </g>
 </svg>`;
 }
 
 function generateEmptySvg(): string {
   const bgColor = "#0d1117";
-  const borderColor = "#30363d";
+  const borderColor = "#1e1e2e";
   const mutedColor = "#8b949e";
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="840" height="120" viewBox="0 0 840 120">
@@ -243,8 +207,7 @@ function generateEmptySvg(): string {
     </style>
   </defs>
   
-  <rect width="840" height="120" fill="${bgColor}" rx="6"/>
-  <rect width="838" height="118" x="1" y="1" fill="none" stroke="${borderColor}" stroke-width="1" rx="6"/>
+  <rect width="840" height="120" fill="${bgColor}" rx="10" stroke="${borderColor}" stroke-width="1"/>
   
   <text class="message" x="420" y="65" text-anchor="middle">No blog posts available</text>
 </svg>`;

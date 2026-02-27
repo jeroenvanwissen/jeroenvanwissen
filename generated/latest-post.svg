@@ -44,27 +44,6 @@
         animation: pulse 2s ease-in-out infinite;
       }
       
-      .border {
-        fill: none;
-        stroke: #30363d;
-        stroke-width: 1;
-        rx: 6;
-        animation: drawBorder 1s ease-out;
-      }
-      
-      .clickable-area {
-        cursor: pointer;
-        transition: opacity 0.2s ease;
-      }
-      
-      .clickable-area:hover .title {
-        fill: #c9d1d9;
-      }
-      
-      .clickable-area:hover .border {
-        stroke: #ff2bb9;
-      }
-      
       @keyframes fadeIn {
         from {
           opacity: 0;
@@ -95,43 +74,28 @@
           opacity: 0.6;
         }
       }
-      
-      @keyframes drawBorder {
-        from {
-          stroke-dasharray: 1740;
-          stroke-dashoffset: 1740;
-        }
-        to {
-          stroke-dasharray: 1740;
-          stroke-dashoffset: 0;
-        }
-      }
     </style>
   </defs>
   
-  <rect width="840" height="120" fill="#0d1117" rx="6"/>
+  <rect width="840" height="120" fill="#0d1117" rx="10" stroke="#1e1e2e" stroke-width="1"/>
   
-  <a href="https://jeroenvanwissen.nl/post/building-an-ai-skill-for-project-analysis/" target="_top" class="clickable-area">
-    <rect class="border" width="838" height="118" x="1" y="1"/>
-    
-    <g class="container">
-      <!-- Icon -->
-      <g class="icon">
-        <circle cx="30" cy="30" r="6"/>
-        <path d="M 30 40 L 30 70 M 20 60 L 30 70 L 40 60" stroke="#ff2bb9" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-      </g>
-      
-      <!-- Label -->
-      <text class="label" x="50" y="28">Latest Blog Post</text>
-      
-      <!-- Title -->
-      <text class="title" x="50" y="55">Building an AI Skill for Project Analysis</text>
-      
-      <!-- Description -->
-      <text class="description" x="50" y="75">I built a skill that analyzes codebases and generates structured task backlog...</text>
-      
-      <!-- Date -->
-      <text class="date" x="50" y="95">27 Feb 2026</text>
+  <g class="container">
+    <!-- Icon -->
+    <g class="icon">
+      <circle cx="30" cy="30" r="6"/>
+      <path d="M 30 40 L 30 70 M 20 60 L 30 70 L 40 60" stroke="#ff2bb9" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
     </g>
-  </a>
+    
+    <!-- Label -->
+    <text class="label" x="50" y="28">Latest Blog Post</text>
+    
+    <!-- Title -->
+    <text class="title" x="50" y="55">Building an AI Skill for Project Analysis</text>
+    
+    <!-- Description -->
+    <text class="description" x="50" y="75">I built a skill that analyzes codebases and generates structured task backlog...</text>
+    
+    <!-- Date -->
+    <text class="date" x="50" y="95">27 Feb 2026</text>
+  </g>
 </svg>

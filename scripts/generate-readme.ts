@@ -142,9 +142,35 @@ function formatDate(dateStr: string): string {
   return `${day} ${month} ${year}`;
 }
 
+async function fetchLatestBlogPost(): Promise<string | null> {
+  try {
+    const response = await fetch("https://jeroenvanwissen.nl/feed.xml");
+    if (!response.ok) {
+      return null;
+    }
+
+    const xml = await response.text();
+
+    // Parse RSS feed to get the first item link
+    const itemMatch = xml.match(/<item>([\s\S]*?)<\/item>/);
+    if (!itemMatch) {
+      return null;
+    }
+
+    const item = itemMatch[1];
+    const link = item.match(/<link>(.*?)<\/link>/)?.[1] ?? "";
+
+    return link || null;
+  } catch (err) {
+    return null;
+  }
+}
+
 export async function generateReadme(): Promise<string> {
   const posts = await fetchPosts();
   console.log(`  Found ${posts.length} posts from ${FEED_URL}`);
+
+  const latestBlogPostUrl = await fetchLatestBlogPost();
 
   const postsSection =
     posts.length > 0
@@ -180,7 +206,7 @@ ${posts.length > 5 ? `\n[View all posts...](${SITE_URL})\n` : ""}`
 <br />
 
 <p align="center">
-  <img src="generated/latest-post.svg" alt="Latest Blog Post" width="840" />
+  ${latestBlogPostUrl ? `<a href="${latestBlogPostUrl}">` : ""}<img src="generated/latest-post.svg" alt="Latest Blog Post" width="840" />${latestBlogPostUrl ? "</a>" : ""}
 </p>
 
 <br />

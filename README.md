@@ -15,7 +15,7 @@
 <br />
 
 <p align="center">
-  <img src="generated/latest-post.svg" alt="Latest Blog Post" width="840" />
+  <a href="https://jeroenvanwissen.nl/post/building-an-ai-skill-for-project-analysis/"><img src="generated/latest-post.svg" alt="Latest Blog Post" width="840" /></a>
 </p>
 
 <br />
