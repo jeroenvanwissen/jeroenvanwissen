@@ -4,6 +4,7 @@ import { fetchGitHubData } from "./fetch-github-data.js";
 import { generateHeaderSvg } from "./generate-header.js";
 import { generateLanguagesSvg } from "./generate-languages.js";
 import { generateStatsSvg } from "./generate-stats.js";
+import { generateLatestPostSvg } from "./generate-latest-post.js";
 import { generateReadme } from "./generate-readme.js";
 
 const USERNAME = "jeroenvanwissen";
@@ -39,6 +40,11 @@ async function main() {
   console.log("Generating stats SVG...");
   const statsSvg = generateStatsSvg(data);
   fs.writeFileSync(path.join(GENERATED_DIR, "stats.svg"), statsSvg);
+
+  // Generate latest post SVG
+  console.log("Generating latest post SVG...");
+  const latestPostSvg = await generateLatestPostSvg();
+  fs.writeFileSync(path.join(GENERATED_DIR, "latest-post.svg"), latestPostSvg);
 
   // Generate README (social badges are now shields.io URLs, no SVG generation needed)
   console.log("Generating README.md...");

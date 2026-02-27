@@ -180,6 +180,12 @@ ${posts.length > 5 ? `\n[View all posts...](${SITE_URL})\n` : ""}`
 <br />
 
 <p align="center">
+  <img src="generated/latest-post.svg" alt="Latest Blog Post" width="840" />
+</p>
+
+<br />
+
+<p align="center">
   <img src="generated/languages.svg" alt="Top Languages" width="420" />
   <img src="generated/stats.svg" alt="GitHub Stats" width="420" />
 </p>
