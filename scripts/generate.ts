@@ -5,6 +5,7 @@ import { generateHeaderSvg } from "./generate-header.js";
 import { generateLanguagesSvg } from "./generate-languages.js";
 import { generateStatsSvg } from "./generate-stats.js";
 import { generateLatestPostSvg } from "./generate-latest-post.js";
+import { generateBlueskyPostSvg } from "./generate-bluesky-post.js";
 import { generateReadme } from "./generate-readme.js";
 
 const USERNAME = "jeroenvanwissen";
@@ -36,7 +37,7 @@ async function main() {
   const languagesSvg = generateLanguagesSvg(data);
   fs.writeFileSync(path.join(GENERATED_DIR, "languages.svg"), languagesSvg);
 
-  // Generate stats SVG
+  // Generate stats SVG (includes commit stats)
   console.log("Generating stats SVG...");
   const statsSvg = generateStatsSvg(data);
   fs.writeFileSync(path.join(GENERATED_DIR, "stats.svg"), statsSvg);
@@ -45,6 +46,14 @@ async function main() {
   console.log("Generating latest post SVG...");
   const latestPostSvg = await generateLatestPostSvg();
   fs.writeFileSync(path.join(GENERATED_DIR, "latest-post.svg"), latestPostSvg);
+
+  // Generate Bluesky post SVG
+  console.log("Generating Bluesky post SVG...");
+  const blueskyPostSvg = await generateBlueskyPostSvg();
+  fs.writeFileSync(
+    path.join(GENERATED_DIR, "bluesky-post.svg"),
+    blueskyPostSvg,
+  );
 
   // Generate README (social badges are now shields.io URLs, no SVG generation needed)
   console.log("Generating README.md...");

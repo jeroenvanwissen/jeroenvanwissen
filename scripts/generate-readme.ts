@@ -166,11 +166,44 @@ async function fetchLatestBlogPost(): Promise<string | null> {
   }
 }
 
+async function fetchLatestBlueskyPostUrl(): Promise<string | null> {
+  try {
+    const handle = "jeroenvanwissen.nl";
+    const response = await fetch(
+      `https://public.api.bsky.app/xrpc/app.bsky.feed.getAuthorFeed?actor=${handle}&limit=1`,
+    );
+
+    if (!response.ok) {
+      return null;
+    }
+
+    const data = await response.json();
+
+    if (!data.feed || data.feed.length === 0) {
+      return null;
+    }
+
+    const post = data.feed[0].post;
+    const uri = post.uri || "";
+
+    // Extract post ID from AT URI (at://did:plc:.../app.bsky.feed.post/...)
+    const match = uri.match(/app\.bsky\.feed\.post\/([^/]+)/);
+    if (match) {
+      return `https://bsky.app/profile/${handle}/post/${match[1]}`;
+    }
+
+    return `https://bsky.app/profile/${handle}`;
+  } catch (err) {
+    return null;
+  }
+}
+
 export async function generateReadme(): Promise<string> {
   const posts = await fetchPosts();
   console.log(`  Found ${posts.length} posts from ${FEED_URL}`);
 
   const latestBlogPostUrl = await fetchLatestBlogPost();
+  const latestBlueskyPostUrl = await fetchLatestBlueskyPostUrl();
 
   const postsSection =
     posts.length > 0
@@ -206,7 +239,8 @@ ${posts.length > 5 ? `\n[View all posts...](${SITE_URL})\n` : ""}`
 <br />
 
 <p align="center">
-  ${latestBlogPostUrl ? `<a href="${latestBlogPostUrl}">` : ""}<img src="generated/latest-post.svg" alt="Latest Blog Post" width="840" />${latestBlogPostUrl ? "</a>" : ""}
+  ${latestBlogPostUrl ? `<a href="${latestBlogPostUrl}">` : ""}<img src="generated/latest-post.svg" alt="Latest Blog Post" width="420" />${latestBlogPostUrl ? "</a>" : ""}
+  ${latestBlueskyPostUrl ? `<a href="${latestBlueskyPostUrl}">` : `<a href="https://bsky.app/profile/jeroenvanwissen.nl">`}<img src="generated/bluesky-post.svg" alt="Latest Bluesky Post" width="420" /></a>
 </p>
 
 <br />

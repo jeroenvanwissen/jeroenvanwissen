@@ -15,7 +15,8 @@
 <br />
 
 <p align="center">
-  <a href="https://jeroenvanwissen.nl/post/building-an-ai-skill-for-project-analysis/"><img src="generated/latest-post.svg" alt="Latest Blog Post" width="840" /></a>
+  <a href="https://jeroenvanwissen.nl/post/building-an-ai-skill-for-project-analysis/"><img src="generated/latest-post.svg" alt="Latest Blog Post" width="420" /></a>
+  <a href="https://bsky.app/profile/jeroenvanwissen.nl/post/3mewaa43vbc2a"><img src="generated/bluesky-post.svg" alt="Latest Bluesky Post" width="420" /></a>
 </p>
 
 <br />
