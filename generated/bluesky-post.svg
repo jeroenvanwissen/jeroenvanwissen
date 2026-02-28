@@ -73,7 +73,7 @@
   
   <rect width="420" height="200" fill="#0d1117" rx="10" stroke="#1e1e2e" stroke-width="1"/>
   
-  <a href="https://bsky.app/profile/jeroenvanwissen.nl/post/3mewaa43vbc2a" target="_top">
+  <a href="https://bsky.app/profile/jeroenvanwissen.nl/post/3mfutj4i4cc2j" target="_top">
     <g class="container">
       <!-- Bluesky Icon -->
       <g class="icon" transform="translate(25, 25)">
@@ -86,11 +86,11 @@
       <text class="label" x="55" y="38">Latest Bluesky Post</text>
       
       <!-- Post Text (wrapped) -->
-      <text class="post-text" x="25" y="70">It seems that I’ve now entered the phase in my developer</text>
-      <text class="post-text" x="25" y="90">life that I want to build my own tooling...</text>
+      <text class="post-text" x="25" y="70">Over the last couple of weeks I’ve been researching and</text>
+      <text class="post-text" x="25" y="90">developing a fun little AI Agent Skill. I...</text>
       
       <!-- Date -->
-      <text class="date" x="25" y="175">15 Feb 2026</text>
+      <text class="date" x="25" y="175">23h ago</text>
     </g>
   </a>
 </svg>
