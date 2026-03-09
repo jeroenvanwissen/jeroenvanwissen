@@ -66,7 +66,7 @@
             font-family="'SFMono-Regular', Consolas, monospace" 
             font-size="10"
             style="animation: fadeIn 0.4s ease-out 0.7s both; opacity: 0;">
-        34.5%
+        34.6%
       </text>
     </g>
 
@@ -91,7 +91,7 @@
             width="0" height="12" 
             rx="3" fill="#A97BFF"
             style="animation: growBar 0.8s ease-out 0.4s forwards;">
-        <animate attributeName="width" from="0" to="224.91" 
+        <animate attributeName="width" from="0" to="223.44" 
                  dur="0.8s" begin="0.4s" fill="freeze" />
       </rect>
 
@@ -101,7 +101,7 @@
             font-family="'SFMono-Regular', Consolas, monospace" 
             font-size="10"
             style="animation: fadeIn 0.4s ease-out 0.8s both; opacity: 0;">
-        32.3%
+        32.2%
       </text>
     </g>
 
@@ -126,7 +126,7 @@
             width="0" height="12" 
             rx="3" fill="#ff5a03"
             style="animation: growBar 0.8s ease-out 0.5s forwards;">
-        <animate attributeName="width" from="0" to="102.19" 
+        <animate attributeName="width" from="0" to="101.52" 
                  dur="0.8s" begin="0.5s" fill="freeze" />
       </rect>
 
@@ -136,7 +136,7 @@
             font-family="'SFMono-Regular', Consolas, monospace" 
             font-size="10"
             style="animation: fadeIn 0.4s ease-out 0.9s both; opacity: 0;">
-        14.7%
+        14.6%
       </text>
     </g>
 
@@ -161,7 +161,7 @@
             width="0" height="12" 
             rx="3" fill="#555555"
             style="animation: growBar 0.8s ease-out 0.6s forwards;">
-        <animate attributeName="width" from="0" to="53.41" 
+        <animate attributeName="width" from="0" to="53.06" 
                  dur="0.8s" begin="0.6s" fill="freeze" />
       </rect>
 
@@ -196,7 +196,7 @@
             width="0" height="12" 
             rx="3" fill="#89e051"
             style="animation: growBar 0.8s ease-out 0.7s forwards;">
-        <animate attributeName="width" from="0" to="18.63" 
+        <animate attributeName="width" from="0" to="18.51" 
                  dur="0.8s" begin="0.7s" fill="freeze" />
       </rect>
 
@@ -231,7 +231,7 @@
             width="0" height="12" 
             rx="3" fill="#e34c26"
             style="animation: growBar 0.8s ease-out 0.8s forwards;">
-        <animate attributeName="width" from="0" to="14.16" 
+        <animate attributeName="width" from="0" to="14.07" 
                  dur="0.8s" begin="0.8s" fill="freeze" />
       </rect>
 
@@ -266,7 +266,7 @@
             width="0" height="12" 
             rx="3" fill="#c6538c"
             style="animation: growBar 0.8s ease-out 0.9s forwards;">
-        <animate attributeName="width" from="0" to="13.79" 
+        <animate attributeName="width" from="0" to="13.7" 
                  dur="0.8s" begin="0.9s" fill="freeze" />
       </rect>
 
@@ -301,7 +301,7 @@
             width="0" height="12" 
             rx="3" fill="#f1e05a"
             style="animation: growBar 0.8s ease-out 1s forwards;">
-        <animate attributeName="width" from="0" to="10.23" 
+        <animate attributeName="width" from="0" to="10.16" 
                  dur="0.8s" begin="1s" fill="freeze" />
       </rect>
 
@@ -336,7 +336,7 @@
             width="0" height="12" 
             rx="3" fill="#563d7c"
             style="animation: growBar 0.8s ease-out 1.1s forwards;">
-        <animate attributeName="width" from="0" to="7.14" 
+        <animate attributeName="width" from="0" to="7.09" 
                  dur="0.8s" begin="1.1s" fill="freeze" />
       </rect>
 
@@ -371,7 +371,7 @@
             width="0" height="12" 
             rx="3" fill="#000080"
             style="animation: growBar 0.8s ease-out 1.2s forwards;">
-        <animate attributeName="width" from="0" to="4.27" 
+        <animate attributeName="width" from="0" to="4.24" 
                  dur="0.8s" begin="1.2s" fill="freeze" />
       </rect>
 
