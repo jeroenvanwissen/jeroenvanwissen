@@ -136,7 +136,7 @@
             font-family="'SFMono-Regular', Consolas, monospace" 
             font-size="10"
             style="animation: fadeIn 0.4s ease-out 0.9s both; opacity: 0;">
-        14.6%
+        14.5%
       </text>
     </g>
 
@@ -231,7 +231,7 @@
             width="0" height="12" 
             rx="3" fill="#e34c26"
             style="animation: growBar 0.8s ease-out 0.8s forwards;">
-        <animate attributeName="width" from="0" to="14.07" 
+        <animate attributeName="width" from="0" to="14.33" 
                  dur="0.8s" begin="0.8s" fill="freeze" />
       </rect>
 
@@ -241,7 +241,7 @@
             font-family="'SFMono-Regular', Consolas, monospace" 
             font-size="10"
             style="animation: fadeIn 0.4s ease-out 1.2s both; opacity: 0;">
-        2.0%
+        2.1%
       </text>
     </g>
 
@@ -336,7 +336,7 @@
             width="0" height="12" 
             rx="3" fill="#563d7c"
             style="animation: growBar 0.8s ease-out 1.1s forwards;">
-        <animate attributeName="width" from="0" to="7.09" 
+        <animate attributeName="width" from="0" to="7.53" 
                  dur="0.8s" begin="1.1s" fill="freeze" />
       </rect>
 
@@ -346,7 +346,7 @@
             font-family="'SFMono-Regular', Consolas, monospace" 
             font-size="10"
             style="animation: fadeIn 0.4s ease-out 1.5s both; opacity: 0;">
-        1.0%
+        1.1%
       </text>
     </g>
 
