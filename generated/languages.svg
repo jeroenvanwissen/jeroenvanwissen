@@ -66,18 +66,18 @@
             font-family="'SFMono-Regular', Consolas, monospace" 
             font-size="10"
             style="animation: fadeIn 0.4s ease-out 0.7s both; opacity: 0;">
-        34.4%
+        50.8%
       </text>
     </g>
 
-    <!-- Kotlin -->
+    <!-- Astro -->
     <g>
       <text x="25" y="81" 
             fill="#ffffff" 
             font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" 
             font-size="11" font-weight="500"
             style="animation: fadeIn 0.4s ease-out 0.4s both;">
-        Kotlin
+        Astro
       </text>
 
       <!-- Background bar -->
@@ -89,9 +89,9 @@
       <!-- Filled bar -->
       <rect x="100" y="72" 
             width="0" height="12" 
-            rx="3" fill="#A97BFF"
+            rx="3" fill="#ff5a03"
             style="animation: growBar 0.8s ease-out 0.4s forwards;">
-        <animate attributeName="width" from="0" to="223.44" 
+        <animate attributeName="width" from="0" to="101.52" 
                  dur="0.8s" begin="0.4s" fill="freeze" />
       </rect>
 
@@ -101,18 +101,18 @@
             font-family="'SFMono-Regular', Consolas, monospace" 
             font-size="10"
             style="animation: fadeIn 0.4s ease-out 0.8s both; opacity: 0;">
-        32.0%
+        21.5%
       </text>
     </g>
 
-    <!-- Astro -->
+    <!-- C -->
     <g>
       <text x="25" y="101" 
             fill="#ffffff" 
             font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" 
             font-size="11" font-weight="500"
             style="animation: fadeIn 0.4s ease-out 0.5s both;">
-        Astro
+        C
       </text>
 
       <!-- Background bar -->
@@ -124,9 +124,9 @@
       <!-- Filled bar -->
       <rect x="100" y="92" 
             width="0" height="12" 
-            rx="3" fill="#ff5a03"
+            rx="3" fill="#555555"
             style="animation: growBar 0.8s ease-out 0.5s forwards;">
-        <animate attributeName="width" from="0" to="101.52" 
+        <animate attributeName="width" from="0" to="53.06" 
                  dur="0.8s" begin="0.5s" fill="freeze" />
       </rect>
 
@@ -136,18 +136,18 @@
             font-family="'SFMono-Regular', Consolas, monospace" 
             font-size="10"
             style="animation: fadeIn 0.4s ease-out 0.9s both; opacity: 0;">
-        14.5%
+        11.2%
       </text>
     </g>
 
-    <!-- C -->
+    <!-- Shell -->
     <g>
       <text x="25" y="121" 
             fill="#ffffff" 
             font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" 
             font-size="11" font-weight="500"
             style="animation: fadeIn 0.4s ease-out 0.6s both;">
-        C
+        Shell
       </text>
 
       <!-- Background bar -->
@@ -159,9 +159,9 @@
       <!-- Filled bar -->
       <rect x="100" y="112" 
             width="0" height="12" 
-            rx="3" fill="#555555"
+            rx="3" fill="#89e051"
             style="animation: growBar 0.8s ease-out 0.6s forwards;">
-        <animate attributeName="width" from="0" to="53.06" 
+        <animate attributeName="width" from="0" to="19.06" 
                  dur="0.8s" begin="0.6s" fill="freeze" />
       </rect>
 
@@ -171,18 +171,18 @@
             font-family="'SFMono-Regular', Consolas, monospace" 
             font-size="10"
             style="animation: fadeIn 0.4s ease-out 1s both; opacity: 0;">
-        7.6%
+        4.0%
       </text>
     </g>
 
-    <!-- Shell -->
+    <!-- HTML -->
     <g>
       <text x="25" y="141" 
             fill="#ffffff" 
             font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" 
             font-size="11" font-weight="500"
             style="animation: fadeIn 0.4s ease-out 0.7s both;">
-        Shell
+        HTML
       </text>
 
       <!-- Background bar -->
@@ -194,9 +194,9 @@
       <!-- Filled bar -->
       <rect x="100" y="132" 
             width="0" height="12" 
-            rx="3" fill="#89e051"
+            rx="3" fill="#e34c26"
             style="animation: growBar 0.8s ease-out 0.7s forwards;">
-        <animate attributeName="width" from="0" to="21.84" 
+        <animate attributeName="width" from="0" to="14.33" 
                  dur="0.8s" begin="0.7s" fill="freeze" />
       </rect>
 
@@ -206,18 +206,18 @@
             font-family="'SFMono-Regular', Consolas, monospace" 
             font-size="10"
             style="animation: fadeIn 0.4s ease-out 1.1s both; opacity: 0;">
-        3.1%
+        3.0%
       </text>
     </g>
 
-    <!-- HTML -->
+    <!-- SCSS -->
     <g>
       <text x="25" y="161" 
             fill="#ffffff" 
             font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" 
             font-size="11" font-weight="500"
             style="animation: fadeIn 0.4s ease-out 0.8s both;">
-        HTML
+        SCSS
       </text>
 
       <!-- Background bar -->
@@ -229,9 +229,9 @@
       <!-- Filled bar -->
       <rect x="100" y="152" 
             width="0" height="12" 
-            rx="3" fill="#e34c26"
+            rx="3" fill="#c6538c"
             style="animation: growBar 0.8s ease-out 0.8s forwards;">
-        <animate attributeName="width" from="0" to="14.33" 
+        <animate attributeName="width" from="0" to="13.7" 
                  dur="0.8s" begin="0.8s" fill="freeze" />
       </rect>
 
@@ -241,18 +241,18 @@
             font-family="'SFMono-Regular', Consolas, monospace" 
             font-size="10"
             style="animation: fadeIn 0.4s ease-out 1.2s both; opacity: 0;">
-        2.1%
+        2.9%
       </text>
     </g>
 
-    <!-- SCSS -->
+    <!-- JavaScript -->
     <g>
       <text x="25" y="181" 
             fill="#ffffff" 
             font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" 
             font-size="11" font-weight="500"
             style="animation: fadeIn 0.4s ease-out 0.9s both;">
-        SCSS
+        JavaScript
       </text>
 
       <!-- Background bar -->
@@ -264,9 +264,9 @@
       <!-- Filled bar -->
       <rect x="100" y="172" 
             width="0" height="12" 
-            rx="3" fill="#c6538c"
+            rx="3" fill="#f1e05a"
             style="animation: growBar 0.8s ease-out 0.9s forwards;">
-        <animate attributeName="width" from="0" to="13.7" 
+        <animate attributeName="width" from="0" to="10.84" 
                  dur="0.8s" begin="0.9s" fill="freeze" />
       </rect>
 
@@ -276,18 +276,18 @@
             font-family="'SFMono-Regular', Consolas, monospace" 
             font-size="10"
             style="animation: fadeIn 0.4s ease-out 1.3s both; opacity: 0;">
-        2.0%
+        2.3%
       </text>
     </g>
 
-    <!-- JavaScript -->
+    <!-- CSS -->
     <g>
       <text x="25" y="201" 
             fill="#ffffff" 
             font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" 
             font-size="11" font-weight="500"
             style="animation: fadeIn 0.4s ease-out 1s both;">
-        JavaScript
+        CSS
       </text>
 
       <!-- Background bar -->
@@ -299,9 +299,9 @@
       <!-- Filled bar -->
       <rect x="100" y="192" 
             width="0" height="12" 
-            rx="3" fill="#f1e05a"
+            rx="3" fill="#563d7c"
             style="animation: growBar 0.8s ease-out 1s forwards;">
-        <animate attributeName="width" from="0" to="10.84" 
+        <animate attributeName="width" from="0" to="7.53" 
                  dur="0.8s" begin="1s" fill="freeze" />
       </rect>
 
@@ -315,14 +315,14 @@
       </text>
     </g>
 
-    <!-- CSS -->
+    <!-- Lua -->
     <g>
       <text x="25" y="221" 
             fill="#ffffff" 
             font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" 
             font-size="11" font-weight="500"
             style="animation: fadeIn 0.4s ease-out 1.1s both;">
-        CSS
+        Lua
       </text>
 
       <!-- Background bar -->
@@ -334,9 +334,9 @@
       <!-- Filled bar -->
       <rect x="100" y="212" 
             width="0" height="12" 
-            rx="3" fill="#563d7c"
+            rx="3" fill="#000080"
             style="animation: growBar 0.8s ease-out 1.1s forwards;">
-        <animate attributeName="width" from="0" to="7.53" 
+        <animate attributeName="width" from="0" to="4.24" 
                  dur="0.8s" begin="1.1s" fill="freeze" />
       </rect>
 
@@ -346,18 +346,18 @@
             font-family="'SFMono-Regular', Consolas, monospace" 
             font-size="10"
             style="animation: fadeIn 0.4s ease-out 1.5s both; opacity: 0;">
-        1.1%
+        0.9%
       </text>
     </g>
 
-    <!-- Lua -->
+    <!-- Makefile -->
     <g>
       <text x="25" y="241" 
             fill="#ffffff" 
             font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" 
             font-size="11" font-weight="500"
             style="animation: fadeIn 0.4s ease-out 1.2s both;">
-        Lua
+        Makefile
       </text>
 
       <!-- Background bar -->
@@ -369,9 +369,9 @@
       <!-- Filled bar -->
       <rect x="100" y="232" 
             width="0" height="12" 
-            rx="3" fill="#000080"
+            rx="3" fill="#8b8b8b"
             style="animation: growBar 0.8s ease-out 1.2s forwards;">
-        <animate attributeName="width" from="0" to="4.24" 
+        <animate attributeName="width" from="0" to="3.76" 
                  dur="0.8s" begin="1.2s" fill="freeze" />
       </rect>
 
@@ -381,7 +381,7 @@
             font-family="'SFMono-Regular', Consolas, monospace" 
             font-size="10"
             style="animation: fadeIn 0.4s ease-out 1.6s both; opacity: 0;">
-        0.6%
+        0.8%
       </text>
     </g>
     </g>
